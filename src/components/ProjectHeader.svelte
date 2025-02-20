@@ -9,13 +9,17 @@
 	}
 
 	let { projectName = 'Sample Title', githubUrl }: ProjectHeaderProps = $props();
+
+	function handleBack() {
+		history.back();
+	}
 </script>
 
 <header>
 	<div class="left">
-		<div class="back">
+		<button class="back" onclick={handleBack}>
 			<ArrowLeft height={22} width={22} color={'#a0a0a0'} />
-		</div>
+		</button>
 		<HammerWrench height={22} width={22} color={'#919191'} />
 		<h1>{projectName}</h1>
 	</div>
@@ -64,6 +68,8 @@
 			box-shadow: 0 2px 3px #f2f2f2;
 
 			margin-right: 10px;
+
+			background-color: white;
 
 			transition: all 0.1s ease-in-out;
 

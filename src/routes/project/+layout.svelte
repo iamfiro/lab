@@ -5,7 +5,7 @@
 <div class="main">
 	<ProjectHeader projectName={'PI Visualization'} githubUrl={'https://github.com/iamfiro/lab'} />
 	<div class="frame">
-		<main>
+		<main>asd
 			<slot />
 		</main>
 	</div>
