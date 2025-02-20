@@ -5,7 +5,7 @@
 <div class="main">
 	<ProjectHeader projectName={'PI Visualization'} githubUrl={'https://github.com/iamfiro/lab'} />
 	<div class="frame">
-		<main>asd
+		<main>
 			<slot />
 		</main>
 	</div>
@@ -39,5 +39,7 @@
 
         border: 1px solid #e0e0e0;
         border-radius: 14px;
+
+        overflow: hidden;
     }
 </style>
